@@ -14,8 +14,11 @@
       class="checkbox hidden"
       (click)="toggleDarkTheme()" />
     <div
-      class="block border-[1px] dark:border-white border-gray-900 w-10 h-6 rounded-full"></div>
+      class="block border-[2px] border-gray-800 dark:border-white w-14 h-7 rounded-full"></div>
     <div
-      class="dot absolute left-1 top-1 dark:bg-white bg-gray-800 w-4 h-4 rounded-full transition"></div>
+      class="dot absolute left-2 top-1 border-gray-800 dark:border-white w-6 h-5 rounded-full transition flex flex-col justify-center align-baseline">
+      <fa-icon class="icon" *ngIf="darkThemeEnabled" [icon]="faMoon"></fa-icon>
+      <fa-icon class="icon" *ngIf="!darkThemeEnabled" [icon]="faSun"></fa-icon>
+    </div>
   </div>
 </label>

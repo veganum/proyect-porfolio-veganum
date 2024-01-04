@@ -1,0 +1,11 @@
+@font-face {
+  font-family: 'Onest';
+  src: url('../../fonts/Onest-Regular.ttf') format('ttf');
+  src: url('../../fonts/Onest-Bold.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Onest', Fallback, sans-serif;
+}
