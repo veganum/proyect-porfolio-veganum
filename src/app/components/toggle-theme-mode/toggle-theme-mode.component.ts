@@ -13,11 +13,11 @@ import { CommonModule } from '@angular/common';
 export class ToggleThemeModeComponent {
   faMoon = faMoon;
   faSun = faSun;
-  darkThemeEnabled: boolean = true;
+  darkThemeEnabled: boolean = false;
 
   constructor() {
     if (typeof window !== 'undefined') {
-      this.darkThemeEnabled = localStorage.getItem('darkMode') === 'true';
+      this.darkThemeEnabled = localStorage.getItem('darkMode') === 'false';
     }
   }
 
