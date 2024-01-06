@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
   imports: [],
   selector: 'app-experience',
   templateUrl: './experience.component.html',
-  styleUrls: ['./experience.component.css'],
+  styleUrls: ['./experience.component.scss'],
 })
 export class ExperienceComponent {
   constructor() {}

@@ -1,0 +1,21 @@
+img.animated {
+  animation: filter-animation 10s infinite;
+}
+
+@keyframes filter-animation {
+  0% {
+    filter: sepia(0) saturate(2);
+  }
+
+  50% {
+    filter: sepia(1) saturate(8) ;
+  }
+
+  100% {
+    filter: sepia(0) saturate(2) ;
+  }
+}
+
+.screen{
+  height: 89.4vh;
+}
