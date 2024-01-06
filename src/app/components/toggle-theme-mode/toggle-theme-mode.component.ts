@@ -17,6 +17,7 @@ export class ToggleThemeModeComponent {
 
   constructor() {
     if (typeof window !== 'undefined') {
+      localStorage.setItem('darkMode', 'true');
       this.darkThemeEnabled = localStorage.getItem('darkMode') === 'false';
     }
   }
