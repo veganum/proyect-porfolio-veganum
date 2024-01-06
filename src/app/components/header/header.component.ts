@@ -6,6 +6,7 @@ import {
   faArrowUpRightDots,
   faIdCard,
   faDiagramProject,
+  faHome,
 } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
@@ -16,6 +17,7 @@ import {
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent {
+  home = faHome;
   usuario = faUser;
   experiencia = faArrowUpRightDots;
   proyect = faDiagramProject;
