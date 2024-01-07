@@ -1,35 +1,41 @@
-<section
-  class="screen-mobile md:screen flex flex-col md:flex-row justify-center items-center">
-  <div class="mb-5 text-pretty">
-    <h1
-      class="animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent text-5xl font-black flex flex-row gap-x-4 pb-6 lg:pb-10 justify-start mx-10">
-      Hey, soy José
-    </h1>
-    <h2
-      class="text-xl lg:text-2xl max-w-[600px] text-black dark:text-white mx-10">
-      <span
-        class="hover:font-semibold hover:drop-shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)]"
-        >+3 años de experiencia.</span
-      ><span
-        class="text-yellow-800 dark:text-yellow-200 hover:font-semibold hover:drop-shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)]">
-        Desarrollador Web y Antropólogo</span
-      >
-      .<span
-        class="text-red-800 dark:text-red-200 hover:font-semibold hover:drop-shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)]">
-        De Madrid, España</span
-      >.
-      <span
-        class="text-sky-800 dark:text-sky-200 hover:font-semibold hover:drop-shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)]"
-        >Mi sueño es crear aplicaciones únicas.</span
-      >
-    </h2>
-  </div>
-  <div>
-    <img
-      class="rounded-lg mt-5 md:m-auto animated hidden md:flex"
-      [ngSrc]="heroImg"
-      height="300"
-      width="200"
-      alt="midudev photo" />
-  </div>
-</section>
+@defer (on viewport) {
+  <section
+    class="screen-mobile md:screen flex flex-col md:flex-row justify-center items-center">
+    <div class="mb-5 text-pretty">
+      <h1
+        class="animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent text-5xl font-black flex flex-row gap-x-4 pb-6 lg:pb-10 justify-start mx-10">
+        Hey, soy José
+      </h1>
+      <h2
+        class="text-xl lg:text-2xl max-w-[600px] text-black dark:text-white mx-10">
+        <span
+          class="hover:font-semibold hover:drop-shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)]"
+          >+3 años de experiencia.</span
+        ><span
+          class="text-yellow-800 dark:text-yellow-200 hover:font-semibold hover:drop-shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)]">
+          Desarrollador Web y Antropólogo</span
+        >
+        .<span
+          class="text-red-800 dark:text-red-200 hover:font-semibold hover:drop-shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)]">
+          De Madrid, España</span
+        >.
+        <span
+          class="text-sky-800 dark:text-sky-200 hover:font-semibold hover:drop-shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)]"
+          >Mi sueño es crear aplicaciones únicas.</span
+        >
+      </h2>
+    </div>
+    <div>
+      <img
+        class="rounded-lg mt-5 md:m-auto animated hidden md:flex"
+        [ngSrc]="heroImg"
+        height="300"
+        width="200"
+        alt="midudev photo" />
+    </div>
+  </section>
+} @placeholder {
+  <app-loading></app-loading>
+} @loading {
+  Loading...
+}

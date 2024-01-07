@@ -1,1 +1,7 @@
-<p>about works!</p>
+@defer (on viewport) {
+  <p>about works!</p>
+} @placeholder {
+  <app-loading></app-loading>
+} @loading {
+  Loading...
+}
