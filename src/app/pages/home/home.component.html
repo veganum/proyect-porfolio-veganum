@@ -1,7 +1,8 @@
-<section class="screen flex flex-col md:flex-row justify-center items-center">
-  <div class="mb-5">
+<section
+  class="screen-mobile md:screen flex flex-col md:flex-row justify-center items-center">
+  <div class="mb-5 text-pretty">
     <h1
-      class="text-gray-900 dark:text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10 justify-start mx-10 hover:font-extrabold hover:drop-shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)]">
+      class="animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent text-5xl font-black flex flex-row gap-x-4 pb-6 lg:pb-10 justify-start mx-10">
       Hey, soy José
     </h1>
     <h2
@@ -11,7 +12,7 @@
         >+3 años de experiencia.</span
       ><span
         class="text-yellow-800 dark:text-yellow-200 hover:font-semibold hover:drop-shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)]">
-        Desarrollador Web y Creador de Contenido</span
+        Desarrollador Web y Antropólogo</span
       >
       .<span
         class="text-red-800 dark:text-red-200 hover:font-semibold hover:drop-shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)]">
@@ -19,13 +20,13 @@
       >.
       <span
         class="text-sky-800 dark:text-sky-200 hover:font-semibold hover:drop-shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)]"
-        >Especializado en crear aplicaciones únicas.</span
+        >Mi sueño es crear aplicaciones únicas.</span
       >
     </h2>
   </div>
   <div>
     <img
-      class="rounded-lg mt-5 md:m-auto animated"
+      class="rounded-lg mt-5 md:m-auto animated hidden md:flex"
       [ngSrc]="heroImg"
       height="300"
       width="200"
