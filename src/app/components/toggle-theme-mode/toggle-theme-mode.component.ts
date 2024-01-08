@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { Component, Inject } from '@angular/core';
+import { CommonModule, DOCUMENT } from '@angular/common';
 
 @Component({
   standalone: true,
@@ -9,18 +9,17 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./toggle-theme-mode.component.scss'],
 })
 export class ToggleThemeModeComponent {
-  darkThemeEnabled: boolean = false;
+  //Tipo de tema
+  darkMode = true;
 
-  constructor() {
-    if (typeof window !== 'undefined') {
-      // localStorage.setItem('darkMode', 'true');
-      this.darkThemeEnabled = localStorage.getItem('darkMode') === 'false';
-    }
+  constructor(@Inject(DOCUMENT) private document: Document) {
+    //Llamo a document y le asigno el modo que quiero
+    document.documentElement.classList.toggle('dark', this.darkMode);
   }
-
-  toggleDarkTheme(): void {
-    this.darkThemeEnabled = !this.darkThemeEnabled;
-    localStorage.setItem('darkMode', String(this.darkThemeEnabled));
-    document.body.classList.toggle('dark', this.darkThemeEnabled);
+  //Cambio de modo
+  toggleDarkMode() {
+    this.darkMode = !this.darkMode;
+    localStorage.setItem('darkMode', String(this.darkMode));
+    document.documentElement.classList.toggle('dark', this.darkMode);
   }
 }
