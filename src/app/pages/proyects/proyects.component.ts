@@ -1,13 +1,59 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 import { LoadingComponent } from '../../components/loading/loading.component';
+import { ProjectsService } from '../../services/proyects.service';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import {
+  faAngleLeft,
+  faAngleDoubleLeft,
+  faAngleDoubleRight,
+  faAngleRight,
+} from '@fortawesome/free-solid-svg-icons';
+import { CommonModule } from '@angular/common';
 
 @Component({
   standalone: true,
-  imports: [LoadingComponent],
+  imports: [LoadingComponent, FontAwesomeModule, CommonModule],
   selector: 'app-proyects',
   templateUrl: './proyects.component.html',
   styleUrls: ['./proyects.component.scss'],
 })
 export class ProyectsComponent {
-  constructor() {}
+  data: any[] = [];
+  @ViewChild('widgetsContent', { read: ElementRef })
+  public widgetsContent!: ElementRef<any>;
+
+  faAngleLeft = faAngleLeft;
+  faAngleDoubleLeft = faAngleDoubleLeft;
+  faAngleDoubleRight = faAngleDoubleRight;
+  faAngleRight = faAngleRight;
+
+  constructor(private projectsService: ProjectsService) {
+    this.data = projectsService.getDataProyects();
+  }
+
+  public scrollBegin(): void {
+    this.widgetsContent.nativeElement.scrollTo({ left: 0, behavior: 'smooth' });
+  }
+
+  public scrollLeft(): void {
+    this.widgetsContent.nativeElement.scrollTo({
+      left: this.widgetsContent.nativeElement.scrollLeft - 500,
+      behavior: 'smooth',
+    });
+  }
+
+  public scrollRight(): void {
+    this.widgetsContent.nativeElement.scrollTo({
+      left: this.widgetsContent.nativeElement.scrollLeft + 500,
+      behavior: 'smooth',
+    });
+  }
+
+  public scrollLast(): void {
+    this.widgetsContent.nativeElement.scrollTo({
+      left:
+        this.widgetsContent.nativeElement.scrollLeft + 500 * this.data.length,
+      behavior: 'smooth',
+    });
+  }
 }
