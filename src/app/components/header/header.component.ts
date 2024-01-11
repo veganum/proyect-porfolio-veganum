@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { RouterLink, RouterOutlet } from '@angular/router';
 import { ToggleThemeModeComponent } from '../toggle-theme-mode/toggle-theme-mode.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import {
@@ -11,7 +12,12 @@ import {
 
 @Component({
   standalone: true,
-  imports: [ToggleThemeModeComponent, FontAwesomeModule],
+  imports: [
+    ToggleThemeModeComponent,
+    FontAwesomeModule,
+    RouterLink,
+    RouterOutlet,
+  ],
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss'],
