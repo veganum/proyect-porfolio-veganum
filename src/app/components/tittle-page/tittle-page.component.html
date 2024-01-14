@@ -1,0 +1,35 @@
+<h2
+  class="text-3xl font-semibold mb-6 flex gap-x-3 items-center text-teal-600 dark:text-white/80 mt-5 ml-10 md:ml-40">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    class="icon icon-tabler icon-tabler-user"
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    stroke-width="2"
+    stroke="currentColor"
+    fill="none"
+    stroke-linecap="round"
+    stroke-linejoin="round">
+    <ng-container *ngIf="iconPage === 'about'">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" />
+      <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+    </ng-container>
+    <ng-container *ngIf="iconPage === 'experience'">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+      <path
+        d="M3 7m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v9a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z"></path>
+      <path d="M8 7v-2a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v2"></path>
+      <path d="M12 12l0 .01"></path>
+      <path d="M3 13a20 20 0 0 0 18 0"></path>
+    </ng-container>
+    <ng-container *ngIf="iconPage === 'proyects'">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+      <path d="M7 8l-4 4l4 4"></path>
+      <path d="M17 8l4 4l-4 4"></path>
+      <path d="M14 4l-4 16"></path>
+    </ng-container>
+  </svg>
+  {{ titlePage }}
+</h2>

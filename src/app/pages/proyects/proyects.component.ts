@@ -9,10 +9,16 @@ import {
   faAngleRight,
 } from '@fortawesome/free-solid-svg-icons';
 import { CommonModule } from '@angular/common';
+import { TittlePageComponent } from '../../components/tittle-page/tittle-page.component';
 
 @Component({
   standalone: true,
-  imports: [LoadingComponent, FontAwesomeModule, CommonModule],
+  imports: [
+    LoadingComponent,
+    FontAwesomeModule,
+    CommonModule,
+    TittlePageComponent,
+  ],
   selector: 'app-proyects',
   templateUrl: './proyects.component.html',
   styleUrls: ['./proyects.component.scss'],
