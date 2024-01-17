@@ -10,6 +10,7 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import { CommonModule } from '@angular/common';
 import { TittlePageComponent } from '../../components/tittle-page/tittle-page.component';
+import { BreadcrumbComponent } from '../../components/breadcrumb/breadcrumb.component';
 
 @Component({
   standalone: true,
@@ -18,6 +19,7 @@ import { TittlePageComponent } from '../../components/tittle-page/tittle-page.co
     FontAwesomeModule,
     CommonModule,
     TittlePageComponent,
+    BreadcrumbComponent,
   ],
   selector: 'app-proyects',
   templateUrl: './proyects.component.html',
