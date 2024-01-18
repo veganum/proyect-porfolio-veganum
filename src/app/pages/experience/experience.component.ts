@@ -22,12 +22,11 @@ export class ExperienceComponent {
   tabIndex: string = 'Trabajo';
 
   estudios: any[] = [];
-  trabajo: any[] = [];
+  trabajos: any[] = [];
 
   constructor(private experienceService: ExperienceService) {
-    console.log(experienceService.getAcademicExperience());
-    // console.log(experienceService.getWorkExperience());
     this.estudios = experienceService.getAcademicExperience();
+    this.trabajos = experienceService.getWorkExperience();
   }
 
   openCity(event: any) {

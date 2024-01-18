@@ -31,375 +31,48 @@
         <h3 class="text-lg font-bold text-teal-600 dark:text-white mb-2">
           Experiencia Laboral 💻
         </h3>
+
         <ol class="relative border-s border-teal-600 dark:border-gray-700">
-          <li class="mb-5 ms-4">
+          <li class="mb-5 ms-4" *ngFor="let trabajo of trabajos">
             <div
               class="absolute w-3 h-3 bg-teal-600 rounded-full mt-1.5 -start-1.5 border border-teal-600 dark:border-gray-900 dark:bg-gray-700"></div>
             <time
               class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
-              >2023 - Actualidad</time
+              >{{ trabajo.years }}</time
             >
             <h3 class="text-lg font-bold text-teal-600 dark:text-white">
-              FrontEnd Developer
+              {{ trabajo.title }}
             </h3>
             <h4 class="text-sm font-semibold text-teal-600 dark:text-white">
-              Wairbut (Altia)
+              {{ trabajo.subtitle }}
             </h4>
             <div
               class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400 text-balance">
               <div class="m-2">
                 <p>
-                  Desarrollo de proyecto para Cetse (Centro Tecnológico de
-                  Seguridad).
+                  {{ trabajo.description }}
                 </p>
               </div>
-              <div class="flex: 1 1 auto">
+              <div class="">
                 <span class="font-medium text-teal-600 dark:text-white mr-2"
                   >Aptitudes:</span
                 >
                 <span
-                  class="bg-red-100 text-red-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-red-900 dark:text-red-300"
-                  >Angular</span
-                >
-                <span class="font-medium text-teal-600 dark:text-white mr-2"
-                  >/</span
-                >
-                <span
-                  class="bg-green-100 text-green-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-green-900 dark:text-green-300"
-                  >Springboot</span
-                >
-                <span class="font-medium text-teal-600 dark:text-white mr-2"
-                  >/</span
-                >
-                <span
-                  class="bg-gray-100 text-gray-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-gray-700 dark:text-gray-300"
-                  >Angular Material / Taildwind</span
-                >
-                <span class="font-medium text-teal-600 dark:text-white mr-2"
-                  >/</span
-                >
-                <span
-                  class="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-blue-900 dark:text-blue-300"
-                  >Oracle</span
-                >
-                <span class="font-medium text-teal-600 dark:text-white mr-2"
-                  >/</span
-                >
-                <span
-                  class="bg-yellow-100 text-yellow-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-yellow-900 dark:text-yellow-300"
-                  >Node</span
-                >
-                <span class="font-medium text-teal-600 dark:text-white mr-2"
-                  >/</span
-                >
-                <span
-                  class="bg-pink-100 text-pink-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-pink-900 dark:text-pink-300"
-                  >Sass/Scss
+                  *ngFor="let aptitud of trabajo.aptitudes"
+                  [class]="
+                    'bg-' +
+                    aptitud.color +
+                    '-100 text-' +
+                    aptitud.color +
+                    '-800 dark:bg-' +
+                    aptitud.color +
+                    '-900 dark:text-' +
+                    aptitud.color +
+                    '-300 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full text-center'
+                  ">
+                  {{ aptitud.technology }}
                 </span>
               </div>
-            </div>
-          </li>
-          <li class="mb-5 ms-4">
-            <div
-              class="absolute w-3 h-3 bg-teal-600 rounded-full mt-1.5 -start-1.5 border border-teal-600 dark:border-gray-900 dark:bg-gray-700"></div>
-            <time
-              class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
-              >2022-2023</time
-            >
-            <h3 class="text-lg font-bold text-teal-600 dark:text-white">
-              FullStack Developer
-            </h3>
-            <h4 class="text-sm font-semibold text-teal-600 dark:text-white">
-              Wairbut (Altia)
-            </h4>
-            <div
-              class="text-base font-normal text-gray-500 dark:text-gray-400 text-balance">
-              <div class="m-2">
-                <p>
-                  Proyecto para la Dirección General de Seguros y Fondos de
-                  Pensiones con React y .Net(C#)
-                </p>
-                <p>
-                  React Hooks, React Router, Dom 6, Redux, TypeScript.Proyecto
-                  para la Dirección General de Seguros y Fondos de Pensiones con
-                  React y .Net(C#)
-                </p>
-              </div>
-
-              <div>
-                <span class="font-medium text-teal-600 dark:text-white mr-2"
-                  >Aptitudes:</span
-                >
-                <span
-                  class="bg-cyan-100 text-cyan-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-cyan-900 dark:text-cyan-300"
-                  >React</span
-                >
-                <span class="font-medium text-teal-600 dark:text-white mr-2"
-                  >/</span
-                >
-                <span
-                  class="bg-violet-100 text-violet-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-violet-900 dark:text-violet-300"
-                  >ASP.NET</span
-                >
-                <span class="font-medium text-teal-600 dark:text-white mr-2"
-                  >/</span
-                >
-                <span
-                  class="bg-gray-100 text-gray-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-gray-700 dark:text-gray-300"
-                  >React-bootstrap</span
-                >
-                <span class="font-medium text-teal-600 dark:text-white mr-2"
-                  >/</span
-                >
-                <span
-                  class="bg-purple-100 text-purple-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-purple-900 dark:text-purple-300"
-                  >Redux</span
-                >
-              </div>
-            </div>
-          </li>
-          <li class="mb-5 ms-4">
-            <div
-              class="absolute w-3 h-3 bg-teal-600 rounded-full mt-1.5 -start-1.5 border border-teal-600 dark:border-gray-900 dark:bg-gray-700"></div>
-            <time
-              class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
-              >2020</time
-            >
-            <h3 class="text-lg font-bold text-teal-600 dark:text-white">
-              FullStack Developer Junior
-            </h3>
-            <h4 class="text-sm font-semibold text-teal-600 dark:text-white">
-              LCC España
-            </h4>
-            <div
-              class="text-base font-normal text-gray-500 dark:text-gray-400 text-balance">
-              <div class="m-2">
-                <p>Manejo de base de datos con SQLServer y creación de PLC</p>
-                <p>Springboot y documentación de API con Swagger</p>
-                <p>Angular</p>
-                <p>Boostrap</p>
-              </div>
-              <div>
-                <span class="font-medium text-teal-600 dark:text-white mr-2"
-                  >Aptitudes:</span
-                >
-                <span
-                  class="bg-red-100 text-red-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-red-900 dark:text-red-300"
-                  >Angular</span
-                >
-                <span class="font-medium text-teal-600 dark:text-white mr-2"
-                  >/</span
-                >
-                <span
-                  class="bg-green-100 text-green-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-green-900 dark:text-green-300"
-                  >Springboot</span
-                >
-                <span class="font-medium text-teal-600 dark:text-white mr-2"
-                  >/</span
-                >
-                <span
-                  class="bg-gray-100 text-gray-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-gray-700 dark:text-gray-300"
-                  >Boostrap</span
-                >
-                <span class="font-medium text-teal-600 dark:text-white mr-2"
-                  >/</span
-                >
-                <span
-                  class="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-blue-900 dark:text-blue-300"
-                  >SQLServer</span
-                >
-                <span class="font-medium text-teal-600 dark:text-white mr-2"
-                  >/</span
-                >
-                <span
-                  class="bg-yellow-100 text-yellow-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-yellow-900 dark:text-yellow-300"
-                  >GeoServer / Leaflet js</span
-                >
-                <span class="font-medium text-teal-600 dark:text-white mr-2"
-                  >/</span
-                >
-                <span
-                  class="bg-pink-100 text-pink-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-pink-900 dark:text-pink-300"
-                  >ChartJS / Apache ECharts
-                </span>
-              </div>
-            </div>
-          </li>
-          <li class="mb-5 ms-4">
-            <div
-              class="absolute w-3 h-3 bg-teal-600 rounded-full mt-1.5 -start-1.5 border border-teal-600 dark:border-gray-900 dark:bg-gray-700"></div>
-            <time
-              class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
-              >2020</time
-            >
-            <h3 class="text-lg font-bold text-teal-600 dark:text-white">
-              Chatbot Developer junior
-            </h3>
-            <h4 class="text-sm font-semibold text-teal-600 dark:text-white">
-              BotsLovers
-            </h4>
-            <div
-              class="text-base font-normal text-gray-500 dark:text-gray-400 text-balance">
-              <div class="m-2">
-                <p>
-                  Creación de VoiceBots y ChatBots con DialogFlow para redes
-                  sociales, comercios, restaurantes .
-                </p>
-              </div>
-              <div>
-                <span class="font-medium text-teal-600 dark:text-white mr-2"
-                  >Aptitudes:</span
-                >
-                <span
-                  class="bg-yellow-100 text-yellow-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-yellow-900 dark:text-yellow-300"
-                  >Dialogflow</span
-                >
-                <span class="font-medium text-teal-600 dark:text-white mr-2"
-                  >/</span
-                >
-                <span
-                  class="bg-green-100 text-green-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-green-900 dark:text-green-300"
-                  >Node.js</span
-                >
-                <span class="font-medium text-teal-600 dark:text-white mr-2"
-                  >/</span
-                >
-                <span
-                  class="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-blue-900 dark:text-blue-300"
-                  >Trello</span
-                >
-                <span class="font-medium text-teal-600 dark:text-white mr-2"
-                  >/</span
-                >
-                <span
-                  class="bg-gray-100 text-gray-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-gray-700 dark:text-gray-300"
-                  >Notion</span
-                >
-              </div>
-            </div>
-          </li>
-          <li class="ms-4">
-            <div
-              class="absolute w-3 h-3 bg-teal-600 rounded-full mt-1.5 -start-1.5 border border-teal-600 dark:border-gray-900 dark:bg-gray-700"></div>
-            <time
-              class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
-              >2019-2020</time
-            >
-            <h3 class="text-lg font-bold text-teal-600 dark:text-white">
-              Desarrollador junior
-            </h3>
-            <h4 class="text-sm font-semibold text-teal-600 dark:text-white">
-              Metrica Consulting, S.L
-            </h4>
-
-            <div
-              class="text-base font-normal text-gray-500 dark:text-gray-400 text-balance">
-              <div class="m-2">
-                <p>
-                  Participando en el desarrollo de una app interna (Springboot +
-                  Angular 8) para la gestión y organización de los turnos y
-                  horarios de comida en la empresa (hincapié en la parte
-                  backend).
-                </p>
-                <p>
-                  Generación en excel del informe con los rangos de comidas y
-                  los usuarios.
-                </p>
-                <p>Configserver para la gestión de la configuración.</p>
-                <p>
-                  Eureka server para la comunicación de los servicios.
-                  -Desarrollo de varios microservicios haciendo hincapié en la
-                  parte front y las vistas y usuarios, así como la comunicación
-                  con el backend.
-                </p>
-                <p>
-                  Participación en análisis y estimación de los desarrollos.
-                </p>
-                <p>
-                  Pruebas API REST: POSTMAN. -Metodología agile Scrum (Tableros
-                  kanban / azure boards).
-                </p>
-                <p>
-                  Control de versiones Git con revisión de código mediante
-                  pullrequest (Múltiples ramas: master, development...) y
-                  unificación y control del proyecto.
-                </p>
-                <p>Test unitarios con JUnit.</p>
-                <p>
-                  Ciclo de maven completo (clean, compile, install, deploy).
-                </p>
-                <p>
-                  Creación de tareas Jenkins para subir/depositar el jar final
-                  en artifactory.
-                </p>
-                <p>
-                  Creación de biblioteca de utilidades en un proyecto maven
-                  java: cálculo de fechas.
-                </p>
-                <p>
-                  Despliegue tanto en el front como en el back con sus
-                  respectivas configuraciones en el pom y en el aplication
-                  properties y en angular .json.
-                </p>
-              </div>
-            </div>
-            <div>
-              <span class="font-medium text-teal-600 dark:text-white mr-2"
-                >Aptitudes:</span
-              >
-              <span
-                class="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-blue-900 dark:text-blue-300"
-                >MySQL</span
-              >
-              <span class="font-medium text-teal-600 dark:text-white mr-2"
-                >/</span
-              >
-              <span
-                class="bg-green-100 text-green-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-green-900 dark:text-green-300"
-                >Spring Boot 2: Spring data ,JPA</span
-              >
-              <span class="font-medium text-teal-600 dark:text-white mr-2"
-                >/</span
-              >
-              <span
-                class="bg-gray-100 text-gray-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-gray-700 dark:text-gray-300"
-                >Api Rest</span
-              >
-              <span class="font-medium text-teal-600 dark:text-white mr-2"
-                >/</span
-              >
-              <span
-                class="bg-yellow-100 text-yellow-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-yellow-900 dark:text-yellow-300"
-                >Java 8</span
-              >
-              <span class="font-medium text-teal-600 dark:text-white mr-2"
-                >/</span
-              >
-              <span
-                class="bg-red-100 text-red-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-red-900 dark:text-red-300"
-                >Angular 8 + Bootstrap 4</span
-              >
-              <span class="font-medium text-teal-600 dark:text-white mr-2"
-                >/</span
-              >
-              <span
-                class="bg-pink-100 text-pink-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-pink-900 dark:text-pink-300"
-                >Sonar Lint</span
-              >
-              <span class="font-medium text-teal-600 dark:text-white mr-2"
-                >/</span
-              >
-              <span
-                class="bg-indigo-100 text-indigo-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-indigo-900 dark:text-indigo-300"
-                >Maven</span
-              >
-              <span class="font-medium text-teal-600 dark:text-white mr-2"
-                >/</span
-              >
-              <span
-                class="bg-purple-100 text-purple-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-purple-900 dark:text-purple-300"
-                >JUnit</span
-              >
             </div>
           </li>
         </ol>
