@@ -25,8 +25,8 @@ export class ExperienceComponent {
   trabajos: any[] = [];
 
   constructor(private experienceService: ExperienceService) {
-    this.estudios = experienceService.getAcademicExperience();
-    this.trabajos = experienceService.getWorkExperience();
+    this.estudios = this.experienceService.getAcademicExperience();
+    this.trabajos = this.experienceService.getWorkExperience();
   }
 
   openCity(event: any) {

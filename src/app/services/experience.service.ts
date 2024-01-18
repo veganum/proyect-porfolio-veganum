@@ -17,31 +17,38 @@ export class ExperienceService {
           'Desarrollo de proyecto para Cetse (Centro Tecnológico de Seguridad).',
         aptitudes: [
           {
-            color: 'red',
+            color:
+              'bg-angular-100 text-angular-800 dark:bg-angular-900 dark:text-angular-300',
             technology: 'Angular',
           },
           {
-            color: 'green',
+            color:
+              'bg-spring-100 text-spring-800 dark:bg-spring-900 dark:text-spring-300',
             technology: 'Springboot',
           },
           {
-            color: 'red',
+            color:
+              'bg-angular-100 text-angular-800 dark:bg-angular-900 dark:text-angular-300',
             technology: 'Angular Material',
           },
           {
-            color: 'vulcan',
+            color:
+              'bg-taildwind-100 text-taildwind-800 dark:bg-taildwind-900 dark:text-taildwind-300',
             technology: 'Taildwind',
           },
           {
-            color: 'blue',
+            color:
+              'bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-300',
             technology: 'Oracle',
           },
           {
-            color: 'yellow',
+            color:
+              'bg-node-100 text-node-800 dark:bg-node-900 dark:text-node-300',
             technology: 'Node',
           },
           {
-            color: 'pink',
+            color:
+              'bg-pink-100 text-pink-800 dark:bg-pink-900 dark:text-pink-300',
             technology: 'Sass/Scss',
           },
         ],
@@ -54,19 +61,23 @@ export class ExperienceService {
           'Proyecto para la Dirección General de Seguros y Fondos de Pensiones con React y .Net(C#) . React Hooks, React Router, Dom 6, Redux, TypeScript.Proyecto para la Dirección General de Seguros y Fondos de Pensiones con React y .Net(C#)',
         aptitudes: [
           {
-            color: 'cyan',
+            color:
+              'bg-cyan-100 text-cyan-800 dark:bg-cyan-900 dark:text-cyan-300',
             technology: 'React',
           },
           {
-            color: 'violet',
+            color:
+              'bg-violet-100 text-violet-800 dark:bg-violet-900 dark:text-violet-300',
             technology: 'ASP:NET',
           },
           {
-            color: 'gray',
+            color:
+              'bg-cyan-100 text-cyan-800 dark:bg-cyan-900 dark:text-cyan-300',
             technology: 'React-Bootstrap',
           },
           {
-            color: 'purple',
+            color:
+              'bg-purple-100 text-purple-800 dark:bg-purple-900 dark:text-purple-300',
             technology: 'Redux',
           },
         ],
@@ -79,27 +90,38 @@ export class ExperienceService {
           'Manejo de base de datos con SQLServer y creación de PLC.Springboot y documentación de API con Swagger.Angular.Boostrap',
         aptitudes: [
           {
-            color: 'red',
+            color:
+              'bg-angular-100 text-angular-800 dark:bg-angular-900 dark:text-angular-300',
             technology: 'Angular',
           },
           {
-            color: 'green',
+            color:
+              'bg-spring-100 text-spring-800 dark:bg-spring-900 dark:text-spring-300',
             technology: 'Springboot',
           },
           {
-            color: 'gray',
+            color:
+              'bg-gray-100 text-gray-800 dark:bg-gray-900 dark:text-gray-300',
             technology: 'Bootstrap',
           },
           {
-            color: 'blue',
+            color:
+              'bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-300',
             technology: 'SQL Server',
           },
           {
-            color: 'yellow',
-            technology: 'GeoServer / Leaflet js',
+            color:
+              'bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-300',
+            technology: 'Leaflet js',
           },
           {
-            color: 'pink',
+            color:
+              'bg-geoserver-100 text-geoserver-800 dark:bg-geoserver-900 dark:text-geoserver-300',
+            technology: 'GeoServer',
+          },
+          {
+            color:
+              'bg-pink-100 text-pink-800 dark:bg-pink-900 dark:text-pink-300',
             technology: 'ChartJS / Apache ECharts',
           },
         ],
@@ -112,19 +134,23 @@ export class ExperienceService {
           'Creación de VoiceBots y ChatBots con DialogFlow para redes sociales, comercios, restaurantes .',
         aptitudes: [
           {
-            color: 'yellow',
+            color:
+              'bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-300',
             technology: 'Dialogflow',
           },
           {
-            color: 'green',
+            color:
+              'bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-300',
             technology: 'Node.js',
           },
           {
-            color: 'blue',
+            color:
+              'bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-300',
             technology: 'Trello',
           },
           {
-            color: 'gray',
+            color:
+              'border-gray-100 text-gray-800 dark:bg-gray-900 dark:text-gray-300',
             technology: 'Notion',
           },
         ],
@@ -137,31 +163,43 @@ export class ExperienceService {
           'Participando en el desarrollo de una app interna (Springboot + Angular 8) para la gestión y organización de los turnos y horarios de comida en la empresa (hincapié en la parte backend). Generación en excel del informe con los rangos de comidas y los usuarios. Configserver para la gestión de la configuración. Eureka server para la comunicación de los servicios. -Desarrollo de varios microservicios haciendo hincapié en la parte front y las vistas y usuarios, así como la comunicación con el backend.Participación en análisis y estimación de los desarrollos. Pruebas API REST: POSTMAN. -Metodología agile Scrum (Tableros kanban / azure boards). Control de versiones Git con revisión de código mediante pullrequest (Múltiples ramas: master, development...) y unificación y control del proyecto. Test unitarios con JUnit.  Ciclo de maven completo (clean, compile, install, deploy). Creación de tareas Jenkins para subir/depositar el jar final en artifactory. Creación de biblioteca de utilidades en un proyecto maven java: cálculo de fechas. Despliegue tanto en el front como en el back con sus respectivas configuraciones en el pom y en el aplication properties y en angular .json.',
         aptitudes: [
           {
-            color: 'blue',
+            color:
+              'bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-300',
             technology: 'MySQL',
           },
           {
-            color: 'green',
+            color:
+              'bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-300',
             technology: 'Spring Boot 2: Spring data ,JPA',
           },
           {
-            color: 'yellow',
+            color:
+              'bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-300',
             technology: 'Java 8',
           },
           {
-            color: 'red',
-            technology: 'Angular 8 + Bootstrap 4',
+            color:
+              'bg-angular-100 text-angular-800 dark:bg-angular-900 dark:text-angular-300',
+            technology: 'Angular 8',
           },
           {
-            color: 'pink',
+            color:
+              'bg-gray-100 text-gray-800 dark:bg-gray-900 dark:text-gray-300',
+            technology: 'Bootstrap 4',
+          },
+          {
+            color:
+              'bg-pink-100 text-pink-800 dark:bg-pink-900 dark:text-pink-300',
             technology: 'Sonar Lint',
           },
           {
-            color: 'indigo',
+            color:
+              'bg-indigo-100 text-indigo-800 dark:bg-indigo-900 dark:text-indigo-300',
             technology: 'Maven',
           },
           {
-            color: 'purple',
+            color:
+              'bg-purple-100 text-purple-800 dark:bg-purple-900 dark:text-purple-300',
             technology: 'JUnit',
           },
         ],
