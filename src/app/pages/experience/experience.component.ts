@@ -4,7 +4,6 @@ import { CommonModule } from '@angular/common';
 import { TittlePageComponent } from '../../components/tittle-page/tittle-page.component';
 import { BreadcrumbComponent } from '../../components/breadcrumb/breadcrumb.component';
 import { ExperienceService } from '../../services/experience.service';
-import { log } from 'console';
 
 @Component({
   standalone: true,

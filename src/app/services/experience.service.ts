@@ -7,9 +7,9 @@ export class ExperienceService {
   constructor() {}
 
   getWorkExperience() {
-    //! Falta Experiencia Laboral
-    const data = [
+    const data: any = [
       {
+        id: 1,
         years: '2023 - Actualidad',
         title: 'FrontEnd Developer',
         subtitle: 'Wairbut (Altia)',
@@ -26,15 +26,16 @@ export class ExperienceService {
               'bg-spring-100 text-spring-800 dark:bg-spring-900 dark:text-spring-300',
             technology: 'Springboot',
           },
-          {
-            color:
-              'bg-angular-100 text-angular-800 dark:bg-angular-900 dark:text-angular-300',
-            technology: 'Angular Material',
-          },
+
           {
             color:
               'bg-taildwind-100 text-taildwind-800 dark:bg-taildwind-900 dark:text-taildwind-300',
             technology: 'Taildwind',
+          },
+          {
+            color:
+              'bg-angular-100 text-angular-800 dark:bg-angular-900 dark:text-angular-300',
+            technology: 'Angular Material',
           },
           {
             color:
@@ -54,6 +55,7 @@ export class ExperienceService {
         ],
       },
       {
+        id: 2,
         years: '2022-2023',
         title: 'FullStack Developer',
         subtitle: 'Wairbut (Altia)',
@@ -83,6 +85,7 @@ export class ExperienceService {
         ],
       },
       {
+        id: 3,
         years: '2020-2022',
         title: 'FullStack Developer Junior',
         subtitle: 'LCC España',
@@ -127,6 +130,7 @@ export class ExperienceService {
         ],
       },
       {
+        id: 4,
         years: '2020-2022',
         title: 'Chatbot Developer Junior',
         subtitle: 'BotsLovers',
@@ -156,6 +160,7 @@ export class ExperienceService {
         ],
       },
       {
+        id: 5,
         years: '2019-2020',
         title: 'Desarrollador junior',
         subtitle: 'Metrica Consulting, S.L',
@@ -210,14 +215,16 @@ export class ExperienceService {
   }
 
   getAcademicExperience() {
-    const data = [
+    const data: any[] = [
       {
+        id: 1,
         years: '2018-2020',
         title: 'Desarrollo de aplicaciones multiplataforma',
         description:
           'Impartí la FP de grado superior de DAW en iFP Grupo Planeta',
       },
       {
+        id: 2,
         years: '2017',
         title:
           'Curso de desarrollo orientado a objetos y desarrollo de aplicaciones SAP(ABAP)',
@@ -225,6 +232,7 @@ export class ExperienceService {
           'Aprendizaje de Conocimientos básicos en programacion,bases de datos ,ofimatica , software y hardware(SQL , HTML5 ,CSS3 ,PHP , Javascript y Java).Aprender fundamentos básicos en el paquete de soluciones SAP. Conocimiento de transacciones básicas y principios básicos de lenguaje de programación ABAP.',
       },
       {
+        id: 3,
         years: '2011-2016',
         title: 'Grado en Antropología Social y Cultural, Ciencias sociales',
         description:
