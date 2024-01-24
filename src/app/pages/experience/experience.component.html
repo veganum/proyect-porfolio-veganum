@@ -110,7 +110,7 @@
       <!-- ! ---------------------------------------------------------------------TEST ------------------------------------------------------------------------->
       <div
         *ngIf="tabIndex === 'Test'"
-        class="border-2 border-teal-600 dark:border-white bg-gray-50 text-medium text-gray-500 dark:text-gray-400 dark:bg-gray-800 rounded-lg w-full overflow-y-auto h-full">
+        class="border-2 border-teal-600 dark:border-[#dfdfdf] bg-gray-50 text-medium text-gray-500 dark:text-gray-400 dark:bg-gray-800 rounded-lg w-full overflow-y-auto h-full">
         <div class="bg-[#dfdfdf] rounded-md mx-auto">
           <div class="flex items-center p-2">
             <div class="h-3 w-3 rounded-full mr-2 bg-red-500"></div>
@@ -119,11 +119,11 @@
           </div>
           <div class="text-[#4AF626] bg-black p-4">
             <div>
-              <span class="font-bold">user&#64;computer:</span
-              ><span class="ml-1">~$</span>
+              <span class="font-bold text-[#2D9CDB]">user&#64;computer:</span
+              ><span class="ml-1 text-[#EB5757]">~$</span>
               <span class="ml-2">ls</span>
             </div>
-            <div class="pl-5">file1.txt file2.txt folder1</div>
+            <div class="pl-5 text-white">file1.txt file2.txt folder1</div>
             <div>
               <span class="font-bold">user&#64;computer:</span
               ><span class="ml-1">~$</span>
@@ -135,6 +135,30 @@
               <span class="ml-2">cat file3.txt</span>
             </div>
             <div class="pl-5">This is the content of file3.txt</div>
+            <div>
+              <span class="font-bold text-[#56F2E6]">figma-resources </span>
+              <span class="ml-1 text-[#2D9CDB]"
+                >git: ( <span class="text-[#EB5757]">master</span>)</span
+              >
+              <span class="ml-2 text-white">git log</span>
+            </div>
+            <div>
+              <span class="font-bold text-white">
+                <span class="text-[#EB5757]">e23h217</span> - (
+                <span class="text-[#F2C94C]"
+                  >HEAD -> master, origin/master</span
+                >
+                ) Adding Zach Grosser's resources U.S Maps</span
+              >
+            </div>
+            <div>
+              <span class="font-bold">
+                <span class="text-[#EB5757]">g43e341</span>
+                <span class="text-white"> - Fixing the verbiage </span>
+                <span class="text-[#27AE60]">(4 weeks ago)</span>
+                <span class="text-[#2D9CDB]"> &#60;cwattrus&#62;</span>
+              </span>
+            </div>
           </div>
         </div>
       </div>
