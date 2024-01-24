@@ -24,6 +24,14 @@
             🏫 Experiencia Academica
           </a>
         </li>
+        <li>
+          <a
+            (click)="openCity('Test')"
+            [class.active]="tabIndex === 'Test'"
+            class="border-2 border-teal-600 dark:border-0 inline-flex items-center px-4 py-3 rounded-lg hover:text-gray-900 bg-gray-50 hover:bg-gray-100 w-full dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white">
+            Experiencia test
+          </a>
+        </li>
       </ul>
       <div
         *ngIf="tabIndex === 'Trabajo'"
@@ -98,6 +106,37 @@
             No hay datos sobre la experiencia academica del usuario
           }
         </ol>
+      </div>
+      <!-- ! ---------------------------------------------------------------------TEST ------------------------------------------------------------------------->
+      <div
+        *ngIf="tabIndex === 'Test'"
+        class="border-2 border-teal-600 dark:border-white bg-gray-50 text-medium text-gray-500 dark:text-gray-400 dark:bg-gray-800 rounded-lg w-full overflow-y-auto h-full">
+        <div class="bg-[#dfdfdf] rounded-md mx-auto">
+          <div class="flex items-center p-2">
+            <div class="h-3 w-3 rounded-full mr-2 bg-red-500"></div>
+            <div class="h-3 w-3 rounded-full mr-2 bg-yellow-500"></div>
+            <div class="h-3 w-3 rounded-full bg-green-500"></div>
+          </div>
+          <div class="text-[#4AF626] bg-black p-4">
+            <div>
+              <span class="font-bold">user&#64;computer:</span
+              ><span class="ml-1">~$</span>
+              <span class="ml-2">ls</span>
+            </div>
+            <div class="pl-5">file1.txt file2.txt folder1</div>
+            <div>
+              <span class="font-bold">user&#64;computer:</span
+              ><span class="ml-1">~$</span>
+              <span class="ml-2">cd folder1</span>
+            </div>
+            <div>
+              <span class="font-bold">user&#64;computer:</span
+              ><span class="ml-1">~/folder1$</span>
+              <span class="ml-2">cat file3.txt</span>
+            </div>
+            <div class="pl-5">This is the content of file3.txt</div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
