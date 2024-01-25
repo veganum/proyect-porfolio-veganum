@@ -1,27 +1,97 @@
-<div
-  class="absolute bottom-5 right-5 bg-[#dfdfdf] rounded-md max-w-md mx-auto hidden">
-  <div class="flex items-center p-2">
-    <div class="h-3 w-3 rounded-full mr-2 bg-red-500"></div>
-    <div class="h-3 w-3 rounded-full mr-2 bg-yellow-500"></div>
-    <div class="h-3 w-3 rounded-full bg-green-500"></div>
+<button
+  class="absolute bottom-5 right-5 rounded-xl border p-2 transition hover:-translate-y-1"
+  (click)="toogleTerminal(); startTerminalGreeting()">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    class="w-15 h-auto"
+    width="44"
+    height="44"
+    viewBox="0 0 24 24"
+    stroke-width="1.5"
+    stroke="white"
+    fill="none"
+    stroke-linecap="round"
+    stroke-linejoin="round">
+    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+    <path d="M8 9l3 3l-3 3" />
+    <path d="M13 15l3 0" />
+    <path
+      d="M3 4m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z" />
+  </svg>
+</button>
+
+@if (stateTerminal) {
+  <div
+    class="absolute bottom-5 right-5 border-2 border-[#444345] dark:border-[#dfdfdf] bg-[#dfdfdf] rounded-md z-40 lg:w-3/12 h-auto">
+    <div class="bg-[#444345] dark:bg-[#dfdfdf]">
+      <div class="flex items-center p-3">
+        <button
+          class="h-3 w-3 rounded-full mr-2 bg-red-500 hover:bg-red-700"
+          title="Cerrar ventana"
+          (click)="toogleTerminal()"></button>
+        <button
+          class="h-3 w-3 rounded-full mr-2 bg-yellow-500 hover:bg-yellow-700"
+          title="Minimizar ventana"
+          (click)="toogleTerminal()"></button>
+        <button
+          class="h-3 w-3 rounded-full bg-green-500 hover:bg-green-700"
+          title="Maximizar ventana"
+          (click)="toogleTerminal()"></button>
+        <h4 class="text-black font-bold ml-2 lg:ml-32 terminalTitle">Hola</h4>
+      </div>
+      <div class="text-[#4AF626] bg-black p-4">
+        <div>
+          <span class="font-bold text-[#4AF626]">jose&#64;computer:</span
+          ><span class="ml-1 text-[#EB5757]">~$</span>
+        </div>
+        <div class="pl-5 text-white">Bienvenido a mi porfolio</div>
+        @if (helloTimeEvent) {
+          <div>
+            <span class="font-bold text-[#4AF626]">jose&#64;computer:</span
+            ><span class="ml-1 text-[#EB5757]">~$</span>
+          </div>
+          <div class="pl-5 text-white">
+            Inicializando servidor en el puerto 4200 ...
+          </div>
+        }
+        @if (helloTimeEventUser) {
+          <div>
+            <span class="font-bold text-[#4AF626]">jose&#64;computer:</span
+            ><span class="ml-1 text-[#EB5757]">~$</span>
+          </div>
+          <div class="pl-5 text-white">
+            <div class="">Puedes ejecutar varios comandos:</div>
+            <div class="text-[#F2C94C] ml-5">/Sobre mi</div>
+            <div class="text-white ml-10">Conoceme mas sobre mi</div>
+            <div class="text-[#F2C94C] ml-5">/Experiencia</div>
+            <div class="text-white ml-10">Conoceme mi experiencia</div>
+            <div class="text-[#F2C94C] ml-5">/RedesSociales</div>
+            <div class="text-white ml-10">
+              Conoce mis redes y contacta conmigo
+            </div>
+          </div>
+          <div>
+            <audio #ref src="../../../assets/sound/sounds_key.mp3"></audio>
+            <div>
+              <span class="font-bold text-[#2D9CDB]">user&#64;computer:</span>
+              <span class="ml-1 text-[#EB5757]">~$</span>
+            </div>
+            <div class="pl-5 text-white">
+              {{ this.terminal.data }}
+            </div>
+            <form>
+              >
+              <input
+                class="my-1 m-auto max-w-20 lg:max-w-xl bg-black border-black focus:active:border-black focus:outline-none focus-visible:outline-none"
+                type="text"
+                id="name"
+                name="data"
+                (keydown)="ref.play(); terminalData()"
+                [(ngModel)]="terminal.data" />
+            </form>
+          </div>
+        }
+      </div>
+    </div>
   </div>
-  <div class="text-[#4AF626] bg-black p-4">
-    <div>
-      <span class="font-bold">user&#64;computer:</span
-      ><span class="ml-1">~$</span>
-      <span class="ml-2">ls</span>
-    </div>
-    <div class="pl-5">file1.txt file2.txt folder1</div>
-    <div>
-      <span class="font-bold">user&#64;computer:</span
-      ><span class="ml-1">~$</span>
-      <span class="ml-2">cd folder1</span>
-    </div>
-    <div>
-      <span class="font-bold">user&#64;computer:</span
-      ><span class="ml-1">~/folder1$</span>
-      <span class="ml-2">cat file3.txt</span>
-    </div>
-    <div class="pl-5">This is the content of file3.txt</div>
-  </div>
-</div>
+}
