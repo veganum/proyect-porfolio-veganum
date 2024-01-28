@@ -25,7 +25,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     <fa-icon [icon]="icon"></fa-icon>
     {{ nameSocial }}
   </a>`,
-  styleUrl: './social-pill.component.css',
+  styleUrl: './social-pill.component.scss',
 })
 export class SocialPillComponent {
   @Input() nameSocial: string | undefined;

@@ -72,7 +72,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
     </li>
     <li class="h-[74px] w-[3px] bg-teal-600 dark:bg-white"></li>
   </ul>`,
-  styleUrl: './social-media.component.css',
+  styleUrl: './social-media.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SocialMediaComponent {}

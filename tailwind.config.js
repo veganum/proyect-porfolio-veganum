@@ -86,10 +86,11 @@ module.exports = {
           800: '#af0527',
           900: '#900c27',
           950: '#500010',
-      },
+        },
       },
       animation: {
         text: 'text 5s ease infinite',
+        typing: 'typing 2s steps(20)  alternate, blink .7s infinite',
       },
       keyframes: {
         text: {
@@ -100,6 +101,23 @@ module.exports = {
           '50%': {
             'background-size': '200% 200%',
             'background-position': 'right center',
+          },
+        },
+        typing: {
+          '0%': {
+            width: '0%',
+            visibility: 'hidden',
+          },
+          '100%': {
+            width: '100%',
+          },
+        },
+        blink: {
+          '50%': {
+            borderColor: 'transparent',
+          },
+          '100%': {
+            borderColor: 'white',
           },
         },
       },

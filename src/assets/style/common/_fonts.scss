@@ -8,10 +8,8 @@
 
 @font-face {
   font-family: 'EnterCommand';
-  src:
-    url('../../fonts/entercommand.woff2') format('woff2'),
-    url('../../fonts/entercommand.woff') format('woff');
-  font-display: swap;
+  src:  url('../../fonts/entercommand.woff2') format('woff2');
+  src: url('../../fonts/entercommand.woff') format('woff');
 }
 
 body {

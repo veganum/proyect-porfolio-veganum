@@ -38,20 +38,28 @@
           class="h-3 w-3 rounded-full bg-green-500 hover:bg-green-700"
           title="Maximizar ventana"
           (click)="toogleTerminal()"></button>
-        <h4 class="text-black font-bold ml-2 lg:ml-32 terminalTitle">Hola</h4>
+        <div class="m-auto justify-center text-center pr-10">
+          <h4 class="text-white dark:text-black font-bold terminalTitle">
+            Jose Terminal
+          </h4>
+        </div>
       </div>
       <div class="text-[#4AF626] bg-black p-4">
         <div>
           <span class="font-bold text-[#4AF626]">jose&#64;computer:</span
           ><span class="ml-1 text-[#EB5757]">~$</span>
         </div>
-        <div class="pl-5 text-white">Bienvenido a mi porfolio</div>
+        <div
+          class="pl-5 text-white animate-typing overflow-hidden whitespace-nowrap">
+          Bienvenido a mi porfolio
+        </div>
         @if (helloTimeEvent) {
           <div>
             <span class="font-bold text-[#4AF626]">jose&#64;computer:</span
             ><span class="ml-1 text-[#EB5757]">~$</span>
           </div>
-          <div class="pl-5 text-white">
+          <div
+            class="pl-5 text-white animate-typing overflow-hidden whitespace-nowrap">
             Inicializando servidor en el puerto 4200 ...
           </div>
         }
@@ -61,12 +69,14 @@
             ><span class="ml-1 text-[#EB5757]">~$</span>
           </div>
           <div class="pl-5 text-white">
-            <div class="">Puedes ejecutar varios comandos:</div>
+            <div class="animate-typing overflow-hidden whitespace-nowrap">
+              Puedes ejecutar varios comandos:
+            </div>
             <div class="text-[#F2C94C] ml-5">/Sobre mi</div>
             <div class="text-white ml-10">Conoceme mas sobre mi</div>
             <div class="text-[#F2C94C] ml-5">/Experiencia</div>
             <div class="text-white ml-10">Conoceme mi experiencia</div>
-            <div class="text-[#F2C94C] ml-5">/RedesSociales</div>
+            <div class="text-[#F2C94C] ml-5">/Contacto</div>
             <div class="text-white ml-10">
               Conoce mis redes y contacta conmigo
             </div>
@@ -80,25 +90,16 @@
             <div class="pl-5 text-white">
               {{ this.terminal.data }}
             </div>
-            <!-- <form>
-              >
-              <input
-                class="my-1 m-auto max-w-20 lg:max-w-xl bg-black border-black focus:active:border-black focus:outline-none focus-visible:outline-none"
-                type="text"
-                id="name"
-                name="data"
-                (keydown)="refKey.play(); terminalData()"
-                [(ngModel)]="terminal.dataInput" />
-            </form> -->
             <div>
-              <form [formGroup]="commandForm" (keyup.enter)="onSubmit($event)">
+              <form
+                [formGroup]="commandForm"
+                (keyup.enter)="onSubmit($event); terminalData()">
                 >
                 <input
                   type="text"
                   class="my-1 m-auto max-w-20 lg:max-w-xl bg-black border-black focus:active:border-black focus:outline-none focus-visible:outline-none"
                   formControlName="command"
-                  (keydown)="refKey.play(); terminalData()" />
-                <!-- <button type="submit">Enviar</button> -->
+                  (keydown)="refKey.play()" />
               </form>
             </div>
           </div>

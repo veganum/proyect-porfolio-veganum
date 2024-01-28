@@ -10,6 +10,6 @@ import { Component } from '@angular/core';
       src="https://www.svgrepo.com/show/70469/loading.svg"
       alt="Loading icon" />
   </div>`,
-  styleUrl: './loading.component.css',
+  styleUrl: './loading.component.scss',
 })
 export class LoadingComponent {}

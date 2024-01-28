@@ -6,7 +6,7 @@ import { Component, Input } from '@angular/core';
   imports: [CommonModule],
   selector: 'app-tittle-page',
   templateUrl: './tittle-page.component.html',
-  styleUrls: ['./tittle-page.component.css'],
+  styleUrls: ['./tittle-page.component.scss'],
 })
 export class TittlePageComponent {
   constructor() {}
