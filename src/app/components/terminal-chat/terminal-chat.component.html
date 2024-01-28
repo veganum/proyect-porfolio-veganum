@@ -72,7 +72,7 @@
             </div>
           </div>
           <div>
-            <audio #refkey src="../../../assets/sound/sounds_key.mp3"></audio>
+            <audio #refKey src="../../../assets/sound/sounds_key.mp3"></audio>
             <div>
               <span class="font-bold text-[#2D9CDB]">user&#64;computer:</span>
               <span class="ml-1 text-[#EB5757]">~$</span>
@@ -80,16 +80,27 @@
             <div class="pl-5 text-white">
               {{ this.terminal.data }}
             </div>
-            <form>
+            <!-- <form>
               >
               <input
                 class="my-1 m-auto max-w-20 lg:max-w-xl bg-black border-black focus:active:border-black focus:outline-none focus-visible:outline-none"
                 type="text"
                 id="name"
                 name="data"
-                (keydown)="refkey.play(); terminalData()"
-                [(ngModel)]="terminal.data" />
-            </form>
+                (keydown)="refKey.play(); terminalData()"
+                [(ngModel)]="terminal.dataInput" />
+            </form> -->
+            <div>
+              <form [formGroup]="commandForm" (keyup.enter)="onSubmit($event)">
+                >
+                <input
+                  type="text"
+                  class="my-1 m-auto max-w-20 lg:max-w-xl bg-black border-black focus:active:border-black focus:outline-none focus-visible:outline-none"
+                  formControlName="command"
+                  (keydown)="refKey.play(); terminalData()" />
+                <!-- <button type="submit">Enviar</button> -->
+              </form>
+            </div>
           </div>
         }
       </div>

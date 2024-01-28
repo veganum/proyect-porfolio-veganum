@@ -1,9 +1,15 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
+import {
+  FormsModule,
+  FormGroup,
+  FormBuilder,
+  ReactiveFormsModule,
+} from '@angular/forms';
+import { log } from 'console';
 @Component({
   standalone: true,
-  imports: [CommonModule, FormsModule],
+  imports: [CommonModule, FormsModule, ReactiveFormsModule],
   selector: 'app-terminal-chat',
   templateUrl: './terminal-chat.component.html',
   styleUrls: ['./terminal-chat.component.css'],
@@ -13,9 +19,15 @@ export class TerminalChatComponent {
   helloTimeEvent: boolean = false;
   helloTimeEventUser: boolean = false;
 
-  terminal: { data: string } = { data: '' };
+  terminal = { dataInput: '', data: '' };
 
-  constructor() {}
+  commandForm: FormGroup;
+
+  constructor(private formBuilder: FormBuilder) {
+    this.commandForm = this.formBuilder.group({
+      command: [''],
+    });
+  }
 
   toogleTerminal() {
     this.stateTerminal = !this.stateTerminal;
@@ -33,20 +45,33 @@ export class TerminalChatComponent {
   terminalData() {
     console.log(this.terminal.data);
     if (
-      this.terminal.data === 'hola' ||
-      this.terminal.data === 'Hola' ||
-      this.terminal.data === 'HOLA'
+      this.commandForm.controls['command'].value === 'hola' ||
+      this.commandForm.controls['command'].value === 'Hola' ||
+      this.commandForm.controls['command'].value === 'HOLA'
     ) {
       this.terminal.data = 'Buenos días Jose';
     }
-    if (this.terminal.data === '/Sobre mi') {
+    if (this.commandForm.controls['command'].value === '/Sobre mi') {
       this.terminal.data = 'Desarrollador FrontEnd y Antropologo';
     }
-    if (this.terminal.data === '/Experiencia') {
+    if (this.commandForm.controls['command'].value === '/Experiencia') {
       this.terminal.data = 'Mas de 4 años';
     }
-    if (this.terminal.data === '/Redes') {
+    if (this.commandForm.controls['command'].value === '/Redes') {
       this.terminal.data = 'https://www.linkedin.com/in/jose-franco-nieto';
     }
+  }
+
+  onSubmit(event: Event) {
+    // Evitar el comportamiento predeterminado del formulario al presionar "Enter"
+    event.preventDefault();
+
+    // Verificar si el formulario es nulo antes de acceder a sus propiedades
+    if (this.commandForm) {
+      const command = this.commandForm.get('command')?.value;
+      // Resto del código...
+    }
+
+    console.log(this.commandForm.controls['command'].value);
   }
 }
