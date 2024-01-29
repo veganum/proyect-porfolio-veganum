@@ -6,7 +6,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   standalone: true,
   imports: [CommonModule],
   template: `<ul
-    class="absolute bottom-0 left-20 hidden flex-col items-center gap-6 lg:flex">
+    class="absolute bottom-0 left-20 hidden flex-col items-center gap-6 xl:flex">
     <li>
       <a
         href="../../../../assets/doc/CurriculumJose.pdf"
