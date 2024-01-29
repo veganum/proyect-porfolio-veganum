@@ -1,0 +1,33 @@
+::view-transition-old(root) {
+  animation: exit 1s ease 0s 1 normal forwards;
+}
+
+::view-transition-new(root) {
+  animation: enter 2s ease 0s 1 normal forwards;
+}
+
+@keyframes enter {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes exit {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(0.6);
+  }
+}
+
+// https://dev.to/this-is-angular/add-router-animation-transitions-for-navigation-in-angular-17-2m5a
