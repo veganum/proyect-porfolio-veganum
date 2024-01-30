@@ -1,33 +1,70 @@
+// ::view-transition-old(root) {
+//   animation: exit 1s ease 0s 1 normal forwards;
+// }
+
+// ::view-transition-new(root) {
+//   animation: enter 2s ease 0s 1 normal forwards;
+// }
+
+// @keyframes enter {
+//   0% {
+//     opacity: 0;
+//     transform: translateY(-50px);
+//   }
+
+//   100% {
+//     opacity: 1;
+//     transform: translateY(0);
+//   }
+// }
+
+// @keyframes exit {
+//   0% {
+//     opacity: 1;
+//     transform: scale(1);
+//   }
+
+//   100% {
+//     opacity: 0;
+//     transform: scale(0.6);
+//   }
+// }
+
+// https://dev.to/this-is-angular/add-router-animation-transitions-for-navigation-in-angular-17-2m5a
+
+
+//! ----------------------------------------------------------------------------------------------
+
 ::view-transition-old(root) {
-  animation: exit 1s ease 0s 1 normal forwards;
+  animation: 1s transition-out 0s ease;
 }
 
 ::view-transition-new(root) {
-  animation: enter 2s ease 0s 1 normal forwards;
+  animation: 1s transition-in 0s ease;
 }
 
-@keyframes enter {
-  0% {
-    opacity: 0;
-    transform: translateY(-50px);
-  }
-
-  100% {
+@keyframes transition-out {
+  from {
     opacity: 1;
-    transform: translateY(0);
+    translate: 0;
+    rotate: 0;
   }
-}
-
-@keyframes exit {
-  0% {
-    opacity: 1;
-    transform: scale(1);
-  }
-
-  100% {
+  to {
     opacity: 0;
-    transform: scale(0.6);
+    translate: -3rem -5rem;
+    rotate: -10deg;
   }
 }
 
-// https://dev.to/this-is-angular/add-router-animation-transitions-for-navigation-in-angular-17-2m5a
+@keyframes transition-in {
+  from {
+    opacity: 0;
+    translate: 3rem 5rem;
+    rotate: -10deg;
+  }
+  to {
+    opacity: 1;
+    translate: 0;
+    rotate: 0;
+  }
+}
