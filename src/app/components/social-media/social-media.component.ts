@@ -6,14 +6,14 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   standalone: true,
   imports: [CommonModule],
   template: `<ul
-    class="absolute bottom-0 left-20 hidden flex-col items-center gap-6 xl:flex">
+    class="absolute bottom-0 left-20 hidden flex-col items-center gap-6 xl:flex ">
     <li>
       <a
         href="../../../../assets/doc/CurriculumJose.pdf"
         target="_blank"
         title="curriculum">
         <svg
-          class="w-7 transition hover:-translate-y-1"
+          class="w-7 transition hover:-translate-y-1 hover:shadow-lg hover:shadow-cyan-500/50 rounded-lg "
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 40 40"
           fill="currentColor">
@@ -31,7 +31,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
         target="_blank"
         title="email">
         <svg
-          class="w-7 transition hover:-translate-y-1"
+          class="w-7 transition hover:-translate-y-1 hover:shadow-lg hover:shadow-cyan-500/50 rounded-lg"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
           fill="currentColor">
@@ -44,7 +44,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
     <li>
       <a href="https://github.com/veganum" target="_blank" title="github">
         <svg
-          class="w-7 transition hover:-translate-y-1"
+          class="w-7 transition hover:-translate-y-1 hover:shadow-lg hover:shadow-cyan-500/50 rounded-lg"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
           fill="currentColor">
@@ -61,7 +61,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
         title="linkedin">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          class="w-7 transition hover:-translate-y-1"
+          class="w-7 transition hover:-translate-y-1 hover:shadow-lg hover:shadow-cyan-500/50 rounded-lg"
           viewBox="0 0 24 24"
           fill="currentColor">
           <path

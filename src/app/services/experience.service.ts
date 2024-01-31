@@ -14,7 +14,7 @@ export class ExperienceService {
         title: 'FrontEnd Developer',
         subtitle: 'Wairbut (Altia)',
         description:
-          'Desarrollo de proyecto para Cetse (Centro Tecnológico de Seguridad).',
+          'Desarrollo de proyecto para el departamento de Frontend para Cetse (Centro Tecnológico de Seguridad).En el Front uso de Angular, Angular Material, Taildwind, SCSS. Gestión y creación de componentes para librerías internas.',
         aptitudes: [
           {
             color:
@@ -60,7 +60,7 @@ export class ExperienceService {
         title: 'FullStack Developer',
         subtitle: 'Wairbut (Altia)',
         description:
-          'Proyecto para la Dirección General de Seguros y Fondos de Pensiones con React y .Net(C#) . React Hooks, React Router, Dom 6, Redux, TypeScript.Proyecto para la Dirección General de Seguros y Fondos de Pensiones con React y .Net(C#)',
+          'Proyecto de aplicación para el departamento de recursos humanos, para la Dirección General de Seguros y Fondos de Pensiones con React y . Net(C#).Uso en el Frontend de React Hooks, React Router, Dom 6, Redux, TypeScript. ',
         aptitudes: [
           {
             color:
@@ -90,7 +90,7 @@ export class ExperienceService {
         title: 'FullStack Developer Junior',
         subtitle: 'LCC España',
         description:
-          'Manejo de base de datos con SQLServer y creación de PLC.Springboot y documentación de API con Swagger.Angular.Boostrap',
+          'Mantenimiento y desarrollo de aplicaciones orientadas a las telecomunicaciones (Radio, Transmision) con Angular y Boostrap en el Frontend, SpringBoot en el Backend y SQLServer como base de datos.Habilidades en gestión y manejo en bases de datos en SQL Server. Desarrollo de procedimientos, Funciones, Jobs, Trigger. Tratamiento de datos mediante procedimientos almacenados para mayor consistencia y performance de las tablas finales y  lanzamiento de tareas recurrentes programadas. Uso de Pentaho para integrar datos en BBDD de forma recurrente.Desarrollo avanzado en librerías de gráficas ChartJS y Apache Echart. Desarrollo de Mapas usando datos Geo espaciales en BBDD, Geoserver y Leaflet.',
         aptitudes: [
           {
             color:
@@ -135,7 +135,7 @@ export class ExperienceService {
         title: 'Chatbot Developer Junior',
         subtitle: 'BotsLovers',
         description:
-          'Creación de VoiceBots y ChatBots con DialogFlow para redes sociales, comercios, restaurantes .',
+          'Creación de Voicebots y Chatbots orientados a entornos comerciales (restaurantes, atención al cliente, agencias de viajes, etc.),  usando tecnologías asociadas al entorno de chatbot:DialogFlow ,Kommunicate, Microsoft Bot, Framework.Diseño de flujo conversacional, entrenamiento  para la mejora de la UI/UX de los Chatbot,Integración o conexión de dichas herramientas a APIS mediante el uso de Node JS y Despliegues en Google Cloud Platform.Uso de herramientas de gestión de tareas: Trello, Notion.',
         aptitudes: [
           {
             color:
@@ -165,7 +165,7 @@ export class ExperienceService {
         title: 'Desarrollador junior',
         subtitle: 'Metrica Consulting, S.L',
         description:
-          'Participando en el desarrollo de una app interna (Springboot + Angular 8) para la gestión y organización de los turnos y horarios de comida en la empresa (hincapié en la parte backend). Generación en excel del informe con los rangos de comidas y los usuarios. Configserver para la gestión de la configuración. Eureka server para la comunicación de los servicios. -Desarrollo de varios microservicios haciendo hincapié en la parte front y las vistas y usuarios, así como la comunicación con el backend.Participación en análisis y estimación de los desarrollos. Pruebas API REST: POSTMAN. -Metodología agile Scrum (Tableros kanban / azure boards). Control de versiones Git con revisión de código mediante pullrequest (Múltiples ramas: master, development...) y unificación y control del proyecto. Test unitarios con JUnit.  Ciclo de maven completo (clean, compile, install, deploy). Creación de tareas Jenkins para subir/depositar el jar final en artifactory. Creación de biblioteca de utilidades en un proyecto maven java: cálculo de fechas. Despliegue tanto en el front como en el back con sus respectivas configuraciones en el pom y en el aplication properties y en angular .json.',
+          'Participación en el desarrollo de una app interna (Spring Boot + Angular 8) para la gestión y organización de los turnos y horarios de comida en la empresa (hincapié en la parte Backend).Generación en Excel del informe con los rangos de comidas y los usuarios.Configserver para la gestión de la configuración.Eureka server para la comunicación de los servicios.Desarrollo de varios microservicios  así como la comunicación entre Backend y Frontend.Pruebas API REST: POSTMAN.Metodología ágil Scrum (Tableros kanban / Azure boards).Control de versiones Git con revisión de código mediante Pull request .Test unitarios con JUnit.Ciclo de maven completo (clean, compile, install, deploy).Creación de tareas Jenkins para subir/depositar el jar final en artifactory.Creación de biblioteca de utilidades en un proyecto maven java: cálculo de fechas.Despliegue y configuracion tanto en front (Angular) como en el Back(Springboot/Maven) ',
         aptitudes: [
           {
             color:
@@ -219,24 +219,24 @@ export class ExperienceService {
       {
         id: 1,
         years: '2018-2020',
-        title: 'Desarrollo de aplicaciones multiplataforma',
+        title: 'Desarrollo de aplicaciones multiplataforma DAW',
         description:
-          'Impartí la FP de grado superior de DAW en iFP Grupo Planeta',
+          'Formación profesional de grado superior orientada a aplicaciones multiplataforma. En este curso aprendí a desarrollar, implantar, y mantener aplicaciones web, móvil y de escritorio; con independencia del modelo empleado y utilizando tecnologías específicas, garantizando el acceso a los datos de forma segura y cumpliendo los criterios de accesibilidad, usabilidad y calidad exigidas en los estándares establecidos',
       },
       {
         id: 2,
         years: '2017',
         title:
-          'Curso de desarrollo orientado a objetos y desarrollo de aplicaciones SAP(ABAP)',
+          'Certificación en Desarrollo Orientado a Objetos y Desarrollo de Aplicaciones ABAP para entornos SAP.',
         description:
-          'Aprendizaje de Conocimientos básicos en programacion,bases de datos ,ofimatica , software y hardware(SQL , HTML5 ,CSS3 ,PHP , Javascript y Java).Aprender fundamentos básicos en el paquete de soluciones SAP. Conocimiento de transacciones básicas y principios básicos de lenguaje de programación ABAP.',
+          'Adquisición de conocimientos de programación básicos: Ofimática, software y hardware y programación en general (SQL, HTML5, CSS3, PHP, JavaScript y Java). Aprender fundamentos básicos en el paquete de soluciones SAP. Conocimiento de transacciones básicas y principios básicos de lenguaje de programación ABAP (TERP10).',
       },
       {
         id: 3,
         years: '2011-2016',
-        title: 'Grado en Antropología Social y Cultural, Ciencias sociales',
+        title: 'Grado en Antropología Social y Cultural',
         description:
-          'Curse estudios universitarios en antropología en la universidad Complutense de Madrid',
+          'Estudios universitarios en Antropología en la Universidad Complutense de Madrid. He adquirido conocimientos avanzados en metodologías tanto cuantitativas como cualitativas en ciencias sociales, así como técnicas y modelos de análisis e investigación social orientados en enfoques culturalistas.',
       },
     ];
 
