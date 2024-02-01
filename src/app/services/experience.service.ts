@@ -23,24 +23,18 @@ export class ExperienceService {
           },
           {
             color:
-              'bg-spring-100 text-spring-800 dark:bg-spring-900 dark:text-spring-300',
-            technology: 'Springboot',
-          },
-
-          {
-            color:
-              'bg-taildwind-100 text-taildwind-800 dark:bg-taildwind-900 dark:text-taildwind-300',
-            technology: 'Taildwind',
-          },
-          {
-            color:
               'bg-angular-100 text-angular-800 dark:bg-angular-900 dark:text-angular-300',
             technology: 'Angular Material',
           },
           {
             color:
-              'bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-300',
-            technology: 'Oracle',
+              'bg-pink-100 text-pink-800 dark:bg-pink-900 dark:text-pink-300',
+            technology: 'Sass/Scss',
+          },
+          {
+            color:
+              'bg-taildwind-100 text-taildwind-800 dark:bg-taildwind-900 dark:text-taildwind-300',
+            technology: 'Taildwind',
           },
           {
             color:
@@ -49,8 +43,13 @@ export class ExperienceService {
           },
           {
             color:
-              'bg-pink-100 text-pink-800 dark:bg-pink-900 dark:text-pink-300',
-            technology: 'Sass/Scss',
+              'bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-300',
+            technology: 'Oracle',
+          },
+          {
+            color:
+              'bg-emerald-100 text-emerald-800 dark:bg-emerald-900 dark:text-emerald-300',
+            technology: 'Accesibilidad Web',
           },
         ],
       },
@@ -69,8 +68,13 @@ export class ExperienceService {
           },
           {
             color:
-              'bg-violet-100 text-violet-800 dark:bg-violet-900 dark:text-violet-300',
-            technology: 'ASP:NET',
+              'bg-purple-100 text-purple-800 dark:bg-purple-900 dark:text-purple-300',
+            technology: 'Redux',
+          },
+          {
+            color:
+              'bg-red-100 text-neutral-800 dark:bg-red-900 dark:text-neutral-300',
+            technology: 'React Router',
           },
           {
             color:
@@ -79,8 +83,28 @@ export class ExperienceService {
           },
           {
             color:
-              'bg-purple-100 text-purple-800 dark:bg-purple-900 dark:text-purple-300',
-            technology: 'Redux',
+              'bg-[#B2F5EA] text-[#234E52] dark:bg-[#1D4044] dark:text-[#4FD1C5]',
+            technology: 'Chakra UI',
+          },
+          {
+            color: 'bg-black text-white dark:bg-white dark:text-black',
+            technology: 'Next JS',
+          },
+          {
+            color:
+              'bg-violet-100 text-violet-800 dark:bg-violet-900 dark:text-violet-300',
+            technology: 'ASP:NET',
+          },
+
+          {
+            color:
+              'bg-gradient-to-r from-[#bd34fe] to-[#41d1ff] text-white dark:bg-gradient-to-r from-[#bd34fe] to-[#41d1ff] dark:text-white',
+            technology: 'Vite',
+          },
+          {
+            color:
+              'bg-fuchsia-100 text-fuchsia-800 dark:bg-fuchsia-900 dark:text-fuchsia-300',
+            technology: 'Axios',
           },
         ],
       },
@@ -99,13 +123,18 @@ export class ExperienceService {
           },
           {
             color:
+              'bg-gray-100 text-gray-800 dark:bg-gray-900 dark:text-gray-300',
+            technology: 'Bootstrap',
+          },
+          {
+            color:
               'bg-spring-100 text-spring-800 dark:bg-spring-900 dark:text-spring-300',
             technology: 'Springboot',
           },
           {
             color:
-              'bg-gray-100 text-gray-800 dark:bg-gray-900 dark:text-gray-300',
-            technology: 'Bootstrap',
+              'bg-gradient-to-r from-blue-100 to-yellow-100 text-white dark:bg-gradient-to-r from-blue-900 to-yellow-900  dark:text-white',
+            technology: 'Python',
           },
           {
             color:
@@ -139,6 +168,11 @@ export class ExperienceService {
         aptitudes: [
           {
             color:
+              'bg-orange-100 text-orange-800 dark:bg-orange-900 dark:text-orange-300',
+            technology: 'UX Conversacional',
+          },
+          {
+            color:
               'bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-300',
             technology: 'Dialogflow',
           },
@@ -169,21 +203,6 @@ export class ExperienceService {
         aptitudes: [
           {
             color:
-              'bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-300',
-            technology: 'MySQL',
-          },
-          {
-            color:
-              'bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-300',
-            technology: 'Spring Boot 2: Spring data ,JPA',
-          },
-          {
-            color:
-              'bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-300',
-            technology: 'Java 8',
-          },
-          {
-            color:
               'bg-angular-100 text-angular-800 dark:bg-angular-900 dark:text-angular-300',
             technology: 'Angular 8',
           },
@@ -194,8 +213,13 @@ export class ExperienceService {
           },
           {
             color:
-              'bg-pink-100 text-pink-800 dark:bg-pink-900 dark:text-pink-300',
-            technology: 'Sonar Lint',
+              'bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-300',
+            technology: 'Java 8',
+          },
+          {
+            color:
+              'bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-300',
+            technology: 'Spring Boot 2',
           },
           {
             color:
@@ -204,8 +228,18 @@ export class ExperienceService {
           },
           {
             color:
+              'bg-pink-100 text-pink-800 dark:bg-pink-900 dark:text-pink-300',
+            technology: 'Sonar Lint',
+          },
+          {
+            color:
               'bg-purple-100 text-purple-800 dark:bg-purple-900 dark:text-purple-300',
             technology: 'JUnit',
+          },
+          {
+            color:
+              'bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-300',
+            technology: 'MySQL',
           },
         ],
       },
