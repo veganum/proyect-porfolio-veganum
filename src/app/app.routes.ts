@@ -26,6 +26,11 @@ export const routes: Routes = [
       ),
   },
   {
+    path: 'test',
+    loadComponent: () =>
+      import('./pages/test/test.component').then(mod => mod.TestComponent),
+  },
+  {
     path: '**',
     redirectTo: 'home',
   },
