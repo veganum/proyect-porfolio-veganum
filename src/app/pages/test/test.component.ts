@@ -9,7 +9,7 @@ import { BreadcrumbComponent } from '../../components/breadcrumb/breadcrumb.comp
   imports: [LoadingComponent, TittlePageComponent, BreadcrumbComponent],
   selector: 'app-test',
   templateUrl: './test.component.html',
-  styleUrls: ['./test.component.css'],
+  styleUrls: ['./test.component.scss'],
 })
 export class TestComponent {
   constructor() {}
