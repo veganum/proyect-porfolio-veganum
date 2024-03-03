@@ -9,6 +9,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:proyect-porfolio-veganum": "node dist/proyect-porfolio-veganum/server/server.mjs",
+    "lint": "ng lint",
     "lint:fix": "ng lint --fix",
     "prettier": "npx prettier --write ."
   },

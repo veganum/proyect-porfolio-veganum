@@ -11,9 +11,8 @@ describe('ToggleThemeModeComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ToggleThemeModeComponent ]
-    })
-    .compileComponents();
+      declarations: [ToggleThemeModeComponent],
+    }).compileComponents();
   }));
 
   beforeEach(() => {

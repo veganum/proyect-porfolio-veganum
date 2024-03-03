@@ -11,9 +11,8 @@ describe('TerminalChatComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ TerminalChatComponent ]
-    })
-    .compileComponents();
+      declarations: [TerminalChatComponent],
+    }).compileComponents();
   }));
 
   beforeEach(() => {
