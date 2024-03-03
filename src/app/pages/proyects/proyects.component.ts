@@ -7,6 +7,7 @@ import {
   faAngleDoubleLeft,
   faAngleDoubleRight,
   faAngleRight,
+  faGlobe,
 } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { CommonModule } from '@angular/common';
@@ -36,6 +37,7 @@ export class ProyectsComponent {
   faAngleDoubleRight = faAngleDoubleRight;
   faAngleRight = faAngleRight;
   faGithub = faGithub;
+  faGlobe = faGlobe;
 
   constructor(private projectsService: ProjectsService) {
     this.data = projectsService.getDataProyects();

@@ -48,12 +48,22 @@
                 {{ item.text }}
               </p>
               <div class="mt-3 flex flex-row justify-end">
-                <a
-                  class="md:border-solid md:border-2 md:border-white p-2 rounded-lg hover:text-indigo-600 hover:border-indigo-600"
-                  [href]="item.url">
-                  <fa-icon [icon]="faGithub"></fa-icon>
-                  <span class="ml-2 hidden md:inline">Ver repositorio</span>
-                </a>
+                @if (item.url) {
+                  <a
+                    class="md:border-solid md:border-2 md:border-white p-2 rounded-lg hover:text-indigo-600 hover:border-indigo-600"
+                    [href]="item.url">
+                    <fa-icon [icon]="faGlobe"></fa-icon>
+                    <!-- <span class="ml-2 hidden md:inline">Ver repositorio</span> -->
+                  </a>
+                }
+                @if (item.repo) {
+                  <a
+                    class="ml-2 md:border-solid md:border-2 md:border-white p-2 rounded-lg hover:text-indigo-600 hover:border-indigo-600"
+                    [href]="item.repo">
+                    <fa-icon [icon]="faGithub"></fa-icon>
+                    <!-- <span class="ml-2 hidden md:inline">Ver repositorio</span> -->
+                  </a>
+                }
               </div>
             </div>
           </div>

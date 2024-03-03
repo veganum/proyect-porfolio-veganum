@@ -11,6 +11,7 @@ interface IProjects {
   text: string;
   img: string;
   url: string;
+  repo: string;
 }
 
 @Injectable({
@@ -33,21 +34,17 @@ export class ProjectsService {
         ],
         text: 'Plantilla para crear temas en Angular Material',
         img: '../../assets/img/angular_material_theming.webp',
-        url: 'https://github.com/veganum/angular-material-theming-example',
+        url: 'https://veganum.github.io/angular-material-theming-example/',
+        repo: 'https://github.com/veganum/angular-material-theming-example',
       },
       {
         id: 2,
-        title: 'React SPA',
-        technology: [
-          {
-            tec: 'React',
-            imgTec:
-              'https://cdn-blog.lawrencemcdaniel.com/wp-content/uploads/2020/06/09140550/React-logo.png',
-          },
-        ],
+        title: 'Arkanoid',
+        technology: [{ tec: 'Javascript', imgTec: 'assets/img/js-img.gif' }],
         text: 'Single Page Aplication en React',
-        img: '../../assets/img/ReactSPA.webp',
-        url: 'https://josefranco.netlify.app/',
+        img: '../../assets/img/arkanoid.jpg',
+        url: 'https://veganum.github.io/arkanoid-game/',
+        repo: 'https://github.com/veganum/arkanoid-game',
       },
       {
         id: 3,
@@ -55,7 +52,8 @@ export class ProjectsService {
         technology: [{ tec: 'Javascript', imgTec: 'assets/img/js-img.gif' }],
         text: 'Bot para telegram',
         img: '',
-        url: 'https://github.com/veganum/Telegram-bot_example',
+        url: '',
+        repo: 'https://github.com/veganum/Telegram-bot_example/',
       },
       {
         id: 4,
@@ -63,7 +61,8 @@ export class ProjectsService {
         technology: [{ tec: 'Javascript', imgTec: 'assets/img/js-img.gif' }],
         text: 'Bot para twitch',
         img: '',
-        url: 'https://github.com/veganum/Twitch-bot',
+        url: '',
+        repo: 'https://github.com/veganum/Twitch-bot',
       },
 
       // {
