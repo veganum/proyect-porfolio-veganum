@@ -52,7 +52,7 @@ export class TerminalChatComponent {
       this.commandForm.controls['command'].value === 'Hola' ||
       this.commandForm.controls['command'].value === 'HOLA'
     ) {
-      let respuestas = [
+      const respuestas = [
         'Buenos días',
         'Saludos',
         'Bienvenido',
@@ -71,7 +71,7 @@ export class TerminalChatComponent {
       this.commandForm.controls['command'].value === 'chao' ||
       this.commandForm.controls['command'].value === 'Chao'
     ) {
-      let respuestas = ['Hasta pronto', 'Adios'];
+      const respuestas = ['Hasta pronto', 'Adios'];
       const random = Math.floor(Math.random() * respuestas.length);
       this.terminal.data = respuestas[random];
     }
@@ -81,7 +81,7 @@ export class TerminalChatComponent {
       this.commandForm.controls['command'].value === 'Sobre mi' ||
       this.commandForm.controls['command'].value === 'sobre mi'
     ) {
-      let respuestas = [
+      const respuestas = [
         'Me gusta cocinar',
         'Me gusta apasiona el mundo de los videojuegos y el rol',
         'Tengo un Corgi llamado Coni',
@@ -94,7 +94,7 @@ export class TerminalChatComponent {
       this.commandForm.controls['command'].value === 'Experiencia' ||
       this.commandForm.controls['command'].value === 'experiencia'
     ) {
-      let respuestas = [
+      const respuestas = [
         'Mas de 4 años de experiencia desarrollando',
         'Estudie Antropología Social y Cultural',
         'Estudie la FP Superior de Desarrollo de aplicaciones multiplataforma (DAW)',
@@ -107,7 +107,7 @@ export class TerminalChatComponent {
       this.commandForm.controls['command'].value === 'Contacto' ||
       this.commandForm.controls['command'].value === 'contacto'
     ) {
-      let respuestas = [
+      const respuestas = [
         'https://www.linkedin.com/in/jose-franco-nieto',
         'https://github.com/veganum',
         'https://github.com/veganum',
@@ -126,7 +126,5 @@ export class TerminalChatComponent {
       const command = this.commandForm.get('command')?.value;
       // Resto del código...
     }
-
-    console.log(this.commandForm.controls['command'].value);
   }
 }

@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
-//Common
+// Common
 import { HeaderComponent } from './components/header/header.component';
 import { SocialMediaComponent } from './components/social-media/social-media.component';
 import { TerminalChatComponent } from './components/terminal-chat/terminal-chat.component';
